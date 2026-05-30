@@ -199,12 +199,6 @@ Key controls:
 > **Note on the webhook adapter:** the `/openclaw/message` endpoint is **unauthenticated by default** so the local demo works out of the box (the placeholder `AGENTIC_LAB_API_KEY=change-me-local-dev` disables the header check). Before exposing the API beyond localhost, set `AGENTIC_LAB_API_KEY` to a real secret and send it as the `x-agentic-lab-key` header. See the production hardening checklist in `docs/MCP_SECURITY.md`.
 
 
-## Suggested GitHub topics
-
-```text
-openclaw mcp model-context-protocol claude ollama multi-agent-agents agentic-ai qwen llama mistral deepseek fastapi ai-infrastructure
-```
-
 ## License
 
 The content of this portfolio is © Mohammed Aboud. Code snippets are MIT unless otherwise stated.ShareContentopenclaw-mcp-agentic-lab.zipzipREADME.md81 linesmd
