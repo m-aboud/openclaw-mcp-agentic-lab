@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "openclaw-agentic-lab": {
+      "command": "python",
+      "args": ["-m", "agentic_lab.mcp_server"],
+      "env": {
+        "AGENTIC_LAB_PROVIDER": "mock"
+      }
+    }
+  }
+}

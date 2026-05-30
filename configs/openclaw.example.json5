@@ -1,0 +1,31 @@
+// Example OpenClaw gateway hardening snippet.
+// Merge into ~/.openclaw/openclaw.json as appropriate for your deployment.
+{
+  channels: {
+    telegram: {
+      enabled: true,
+      // Replace with allowed user IDs/usernames for interview demo safety.
+      allowFrom: ["YOUR_TELEGRAM_USER_ID"]
+    },
+    whatsapp: {
+      enabled: false,
+      // Prefer allowlists before enabling personal messaging channels.
+      allowFrom: ["+966500000000"],
+      groups: {
+        "*": { requireMention: true }
+      }
+    }
+  },
+  messages: {
+    groupChat: {
+      mentionPatterns: ["@agenticlab", "@openclaw"]
+    }
+  },
+  agents: {
+    default: {
+      name: "MCP Agentic Engineer",
+      instructionsFile: "./configs/openclaw.agent.md",
+      webhook: "http://127.0.0.1:8080/openclaw/message"
+    }
+  }
+}

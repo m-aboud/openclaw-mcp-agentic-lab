@@ -1,0 +1,23 @@
+{
+  "provider": "mock",
+  "model": "mock-agent",
+  "detected_capabilities": [
+    "openclaw",
+    "mcp",
+    "claude",
+    "multi-agent",
+    "security"
+  ],
+  "recommended_architecture": "gateway -> orchestrator -> model provider -> MCP tools",
+  "top_risks": [
+    "Prompt injection through channel messages or documents",
+    "Over-permissive MCP tools",
+    "Secrets leakage in logs or model context",
+    "Model/provider lock-in"
+  ],
+  "next_steps": [
+    "Connect the MCP server to Claude Desktop or another MCP-compatible client.",
+    "Wire the webhook adapter to the selected OpenClaw channel/plugin.",
+    "Run the same workflow using Claude and an Ollama-hosted OSS model, then compare outputs."
+  ]
+}
