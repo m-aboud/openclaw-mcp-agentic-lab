@@ -15,10 +15,6 @@ A portfolio-grade **multi-agent AI engineering showcase** demonstrating how to b
 - **Ollama / OSS models** → local/self-hosted model option
 - **Multi-agent orchestration** → planner, MCP integrator, model engineer, security reviewer
 
-This repository is designed for interviews where the company asks:
-
-> “Have you dealt with MCP, Claude, OSS AI models, and multi-agent AI builds using OpenClaw?”
-
 ## Why this repo exists
 
 Most AI demos are simple chatbots. This project shows a more realistic engineering pattern:
@@ -211,4 +207,4 @@ openclaw mcp model-context-protocol claude ollama multi-agent-agents agentic-ai 
 
 ## License
 
-MIT
+The content of this portfolio is © Mohammed Aboud. Code snippets are MIT unless otherwise stated.ShareContentopenclaw-mcp-agentic-lab.zipzipREADME.md81 linesmd
